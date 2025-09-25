@@ -1,8 +1,8 @@
 export interface Product {
-  "Product Name": string;
-  "Price": number;
-  "Image URL": string;
-  "Description": string;
+  "Nama": string;
+  "Url_gambar": string;
+  "Harga": number;
+  "Deskripsi": string;
 }
 
 const API_URL = "https://script.google.com/macros/s/AKfycbzUxrnqazYqG6CGC_VkSk0OPrRwRe5VWgw9xkbBfKCnQ7IUIzbKV0Puy9WPI2hfWw/exec";
@@ -20,22 +20,22 @@ export const fetchProducts = async (): Promise<Product[]> => {
     // Return fallback data if API fails
     return [
       {
-        "Product Name": "Apel Fuji Premium",
-        "Price": 25000,
-        "Image URL": "https://images.pexels.com/photos/102104/pexels-photo-102104.jpeg?auto=compress&cs=tinysrgb&w=400",
-        "Description": "Apel fuji segar dan manis langsung dari kebun pilihan"
+        "Nama": "Apel Fuji Premium",
+        "Harga": 25000,
+        "Url_gambar": "https://images.pexels.com/photos/102104/pexels-photo-102104.jpeg?auto=compress&cs=tinysrgb&w=400",
+        "Deskripsi": "Apel fuji segar dan manis langsung dari kebun pilihan"
       },
       {
-        "Product Name": "Jeruk Medan Manis",
-        "Price": 20000,
-        "Image URL": "https://images.pexels.com/photos/207085/pexels-photo-207085.jpeg?auto=compress&cs=tinysrgb&w=400",
-        "Description": "Jeruk medan super manis dengan kandungan vitamin C tinggi"
+        "Nama": "Jeruk Medan Manis",
+        "Harga": 20000,
+        "Url_gambar": "https://images.pexels.com/photos/207085/pexels-photo-207085.jpeg?auto=compress&cs=tinysrgb&w=400",
+        "Deskripsi": "Jeruk medan super manis dengan kandungan vitamin C tinggi"
       },
       {
-        "Product Name": "Pisang Cavendish",
-        "Price": 15000,
-        "Image URL": "https://images.pexels.com/photos/2872767/pexels-photo-2872767.jpeg?auto=compress&cs=tinysrgb&w=400",
-        "Description": "Pisang cavendish matang sempurna, kaya nutrisi"
+        "Nama": "Pisang Cavendish",
+        "Harga": 15000,
+        "Url_gambar": "https://images.pexels.com/photos/2872767/pexels-photo-2872767.jpeg?auto=compress&cs=tinysrgb&w=400",
+        "Deskripsi": "Pisang cavendish matang sempurna, kaya nutrisi"
       }
     ];
   }

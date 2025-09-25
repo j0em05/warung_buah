@@ -30,8 +30,8 @@ const ProductCard: React.FC<ProductCardProps> = ({ product, isPopular }) => {
       
       <div className="relative overflow-hidden">
         <img 
-          src={product["Image URL"]} 
-          alt={product["Product Name"]}
+          src={product["Url_gambar"]} 
+          alt={product["Nama"]}
           className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
         />
         <div className="absolute top-4 right-4 bg-white rounded-full p-2 shadow-md opacity-0 group-hover:opacity-100 transition-opacity">
@@ -41,18 +41,18 @@ const ProductCard: React.FC<ProductCardProps> = ({ product, isPopular }) => {
       
       <div className="p-6">
         <div className="flex items-center justify-between mb-2">
-          <h3 className="text-lg font-semibold text-gray-900">{product["Product Name"]}</h3>
+          <h3 className="text-lg font-semibold text-gray-900">{product["Nama"]}</h3>
           <div className="flex items-center space-x-1">
             <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
             <span className="text-sm text-gray-600">{rating}</span>
           </div>
         </div>
         
-        <p className="text-gray-600 text-sm mb-4">{product["Description"]}</p>
+        <p className="text-gray-600 text-sm mb-4">{product["Deskripsi"]}</p>
         
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-2">
-            <span className="text-2xl font-bold text-yellow-500">{formatPrice(product["Price"])}</span>
+            <span className="text-2xl font-bold text-yellow-500">{formatPrice(product["Harga"])}</span>
           </div>
           
           <button className="bg-yellow-500 text-white px-4 py-2 rounded-lg hover:bg-yellow-600 transition-colors">
